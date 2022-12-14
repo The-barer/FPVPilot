@@ -1,15 +1,38 @@
-
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
-    return <footer className="page-footer fixed-bottom">
-        <nav className="navbar bg-light">
-            <div className="container-fluid justify-content-center">
-                <a className="navbar-brand" href="#!">
-                    <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
-                        Bootstrap
-                </a>
-            </div>
-        </nav>
+  const navigate = useNavigate();
+  return (
+    <footer className="page-footer">
+      <nav className="footer-navbar">
+        <Link className="footer-nav-item" to={"/"}>
+          UP
+        </Link>
+        <img
+          className="footer-nav-item"
+          src="https://www.svgrepo.com/show/60283/instagram.svg"
+          alt="Instagram"
+          onClick={() => navigate("/")}
+        />
+        <img
+          className="footer-nav-item"
+          src="https://www.svgrepo.com/show/3109/telegram.svg"
+          alt="Telegram"
+          onClick={() => navigate("/")}
+        />
+        <img
+          className="footer-nav-item"
+          src="https://www.svgrepo.com/show/2182/vk.svg"
+          alt="VK"
+          onClick={() => navigate("/")}
+        />
+        <img
+          className="footer-nav-item"
+          src="https://www.svgrepo.com/show/30365/youtube.svg"
+          alt="youtube"
+          onClick={() => navigate("/")}
+        />
+      </nav>
     </footer>
-
+  );
 }
