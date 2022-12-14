@@ -5,9 +5,9 @@ import Showreel from "../Components/Showreel";
 export default function Homepage() {
   return (
     <>
-      <div className="home-title">
-        <h3> DMITRIY BARER</h3>
-        <h2> FPV PILOT </h2>
+      <div className="home-title">      
+        <div className="name">DMITRIY BARER</div>
+        <div className="type">FPV PILOT</div>
       </div>
       <Showreel />
       <Categories />

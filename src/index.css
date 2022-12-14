@@ -1,19 +1,44 @@
 @font-face {
-  font-family: Palanquin;
+  font-family: 'Palanquin';
   src: url(/src/Assets/fonts/Palanquin-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+
 }
-@font-face {
+/* @font-face {
   font-family: Palanquin;
   font-weight: bold;
   src: url(/src/Assets/fonts/Palanquin-Bold.ttf);
+} */
+
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: url(/src/Assets/fonts/OpenSans_Condensed-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
 }
+@font-face {
+  font-family: 'Oswald';
+  src: url(/src/Assets/fonts/Oswald-VariableFont_wght.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Open-Sans-Condensed';
+  src: url(/src/Assets/fonts/OpenSans_Condensed-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+
+} */
+
 * {
   padding: 0;
   margin: 0;
 }
 body {
   margin: 0;
-  font-family: Palanquin, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", 'Open Sans Condensed', 'Palanquin',
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,37 +53,33 @@ code {
 }
 
 .content {
-  min-height: calc(100vh - 8rem);
+  min-height: calc(100vh - 10rem);
 }
 .container {
   width: 80vw;
   margin: 0 auto;
 }
 
-.page-header {
+.header-placement {
+  background-color: rgba(0,0,0,.8);
   display: flex;
+  position: sticky;
+  top: 0rem;
   justify-content: center;
-  position: fixed;
-  height: 3rem;
-  top: 0;
-  font-size: 18px;
-  font-weight: 300;
-  margin-top: 2rem;
-  background-color: #000000;
+  margin-bottom: 2rem;
 }
-
 .header-navbar {
   display: flex;
-}
-.header-placement {
-  display: flex;
-  justify-content: center;
   position: relative;
-  height: 5rem;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 1rem auto;
+  height: 3rem;
+  font-size: 18px;
+  font-weight: 300;
 }
+
 .navbar-item {
-  font-family: Palanquin;
+  font-family: "Palanquin";
   color: #7d7a7a;
   text-decoration: none;
   padding: 0 1rem;
@@ -69,9 +90,26 @@ code {
   color: #fef9f9;
   cursor: default;
 }
-
 .navbar-item:hover:not(.active) {
   color: #9e9999;
+}
+.navbar-logo {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  left: -3rem;
+  transition: 1s;
+}
+.navbar-logo.home {
+  position: absolute;
+  width: fit-content;
+  bottom: -2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  transition: 1s;
 }
 
 .footer-navbar {
@@ -106,16 +144,26 @@ code {
 }
 
 .home-title {
-  font-family: "Open Sans Condensed";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 55px;
-  line-height: 76.4%;
-  /* or 42px */
-
   text-align: center;
+  color: #94949B;
+}
+.home-title>.name {
+  font-family: 'Open Sans Condensed';
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
-  color: #94949b;
-
-  mix-blend-mode: normal;
+.home-title>.type {
+  font-family: 'Oswald';
+  font-size: 75px;
+  font-weight: 300;
+  line-height: 73.5px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.test-news {
+  padding-top: 100vh;
 }
