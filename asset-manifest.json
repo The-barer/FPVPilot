@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/FPVPilot/static/css/main.64fe7040.css",
-    "main.js": "/FPVPilot/static/js/main.ad3cccb8.js",
-    "static/media/Palanquin-Regular.ttf": "/FPVPilot/static/media/Palanquin-Regular.931de8a973ed6a499c8c.ttf",
+    "main.css": "/FPVPilot/static/css/main.fe1fc925.css",
+    "main.js": "/FPVPilot/static/js/main.68ec989f.js",
+    "static/media/news-tile.png": "/FPVPilot/static/media/news-tile.7420bf3b1c2a12c8034b.png",
     "static/media/OpenSans_Condensed-Light.ttf": "/FPVPilot/static/media/OpenSans_Condensed-Light.cd85a151eaf44c6422a4.ttf",
-    "static/media/Oswald-VariableFont_wght.ttf": "/FPVPilot/static/media/Oswald-VariableFont_wght.46d7853f0185f6bf0c93.ttf",
+    "static/media/category-tile.png": "/FPVPilot/static/media/category-tile.5f759d03c4c23c37a55a.png",
     "index.html": "/FPVPilot/index.html",
-    "main.64fe7040.css.map": "/FPVPilot/static/css/main.64fe7040.css.map",
-    "main.ad3cccb8.js.map": "/FPVPilot/static/js/main.ad3cccb8.js.map"
+    "main.fe1fc925.css.map": "/FPVPilot/static/css/main.fe1fc925.css.map",
+    "main.68ec989f.js.map": "/FPVPilot/static/js/main.68ec989f.js.map"
   },
   "entrypoints": [
-    "static/css/main.64fe7040.css",
-    "static/js/main.ad3cccb8.js"
+    "static/css/main.fe1fc925.css",
+    "static/js/main.68ec989f.js"
   ]
 }
