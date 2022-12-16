@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer className="footer-element">
       <nav className="footer-navbar">
-        <Link className="nav-item" to={"/"}>
+        <Link className="nav-item" to={"/"} onClick={scrollToTop}>
           UP
         </Link>
         <a

@@ -14,6 +14,7 @@
 }
 body {
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Open Sans Condensed", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -33,14 +34,20 @@ code {
 }
 
 .content {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 5rem - 5rem - 4rem);
 }
 .container {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem 0;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
 }
 
 .header-element {
@@ -105,9 +112,10 @@ code {
 }
 @media (max-width: 1100px) {
   .nav-logo {
+    height: 2rem;
     position: static;
     left: unset;
-    margin: 1rem auto 0;
+    margin: 0 auto;
   }
   .header-element {
     flex-direction: column;
@@ -115,22 +123,23 @@ code {
 }
 @media (max-width: 600px) {
   .header-navbar {
-    display: none;
+    display: fixed;
+    top: 0;
   }
 }
 .footer-element {
   width: 100%;
-  padding-bottom: 2rem;
+  padding: 1.5rem 0;
 }
 .footer-navbar {
-  height: 3rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 .footer-navbar > .nav-item {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   letter-spacing: 0.1rem;
 }
 
@@ -158,7 +167,6 @@ code {
 }
 .showreel-element {
   width: 100%;
-  margin: 2.5rem auto;
 }
 
 .showreel-video {
@@ -178,7 +186,6 @@ code {
 }
 .categories-element {
   width: 100%;
-  margin: 2.5rem auto;
 }
 .categories-title {
   font-family: "Bebas Neue", cursive;
@@ -195,7 +202,6 @@ code {
 
 .news-element {
   width: 100%;
-  margin: 2.5rem auto;
 }
 .news-title {
   font-family: "Open Sans Condensed";

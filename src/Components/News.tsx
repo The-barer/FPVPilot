@@ -1,55 +1,27 @@
 import newsTile from "../Assets/img/news-tile.png";
+import NewsItem from "./NewsItem";
+
 export default function News() {
-  const description: string = `NEWS description....Lörem ipsum dosam mas till endless aisles,
-              minade. Befinat operaosmos: till Caroline Berglund despessade
-              såsom tekassade. Polybögen bere trelyv lyjugisk. Ogt Lovisa
-              Berggren om än Elisabeth Lundström. Retailtainment voice commerce
-              Filip Sundberg. Vipont beriska jotåtad pongen. Exekvera rän.
-              Söling bevis. Bior Johan Lindqvist friktionsfri handel, i denyrade
-              är vöhyska. Rerade böng. Anton Karlsson jul i bos. Rean dest och
-              digt. Multisam nilig Leif Samuelsson pod, Rune Bergman. Plak
-              exopp. Conversational commerce gigal i räsam.
-              Investeringsfrämjande inbound innovation niktigt därför att Barbro
-              Månsson. Tår SEM testbädd och facilitera. Liss fososk och
-              popreliga räss. Rel vössa, de ögisk: migosam plaskapet. Åvis
-              chatbots. Trikys mint. Ire tår. Organisatorisk kamirat att neren.
-              Megamiledes misotiv tegt disruptive. Du kan vara drabbad.
-              Infrangen exonde, vödevis, vipp i viteliga. Latåning hashtag.
-              Stenock. Louise Lundqvist Jörgen Hellström. Vigt antropotet joduns
-              inte befist. Nyska sedunat nemons i prer. Dise orat, Ingemar
-              Johnsson plajåsa förutom des. Monolins tågisk nev. Mingen cirkulär
-              ekonomi innan åt disövis MVP. Vast tåktig om micro-moments linade.
-              Gönade exekvera, Monica Isaksson, autosk. Ripp gövis och dektiga
-              dodat.`;
+  const news = [
+    {
+      image: newsTile,
+      title: "title1",
+      description: `orem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.`,
+    },
+    {
+      image: newsTile,
+      title: "title2",
+      description: `orem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.`,
+    },
+  ];
 
   return (
     <div className="news-element">
       <div className="news-title">News</div>
       <div className="news">
-        <div className="news-item">
-          <div className="img">
-            <img src={newsTile} alt="News Tile" />
-          </div>
-          <div className="news-content">
-            <div className="title">NEWS TITLE</div>
-            <div className="description">
-              {description.slice(0, 1000) + "..."}
-            </div>
-          </div>
-          <hr />
-        </div>
-        <div className="news-item">
-          <div className="img">
-            <img src={newsTile} alt="News Tile" />
-          </div>
-          <div className="news-content">
-            <div className="title">NEWS TITLE</div>
-            <div className="description">
-              {description.slice(0, 1000) + "..."}
-            </div>
-          </div>
-          <hr />
-        </div>
+        {news.map((element) => (
+          <NewsItem {...element} />
+        ))}
       </div>
     </div>
   );
