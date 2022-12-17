@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -7,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="footer-element">
       <nav className="footer-navbar">
-        <Link className="nav-item" to={"/"} onClick={scrollToTop}>
+        <button className="nav-item" onClick={scrollToTop}>
           UP
-        </Link>
+        </button>
         <a
           className="nav-item"
           href="https://www.instagram.com/thebarer/"

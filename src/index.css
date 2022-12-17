@@ -39,6 +39,7 @@ code {
 .container {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
@@ -89,6 +90,8 @@ code {
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
+  background-color: unset;
+  border: none;
 }
 .nav-item.active {
   color: #fef9f9;

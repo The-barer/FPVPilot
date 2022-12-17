@@ -41,7 +41,7 @@ export default function Header() {
         <Link className="nav-item" to={"/contact"} onClick={activateLink}>
           CONTACT
         </Link>
-        <Link className="nav-item" to={"/"} onClick={activateLink}>
+        <Link className="nav-item" to={"?search"} onClick={activateLink}>
           SEARCH
         </Link>
       </nav>
