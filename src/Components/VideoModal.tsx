@@ -9,7 +9,9 @@ export default function VideoModal(params: any) {
     <>
       <div className="video-modal-overlay" onClick={params.close}></div>
       <div className="video-modal">
-        <div className="modal-close">&times; </div>
+        <div className="modal-close" onClick={params.close}>
+          &times;
+        </div>
         <div className="video-modal-content">
           <div className="video-content-title">{category}</div>
           <iframe
