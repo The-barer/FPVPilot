@@ -1,6 +1,6 @@
 .page-title {
   position: relative;
-  font-family: Bebas Neue;
+  font-family: 'Bebas Neue';
   font-size: 80px;
   font-weight: 400;
   line-height: 87px;
@@ -35,7 +35,7 @@
 
 .category-videos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1rem;
   gap: 1rem;
   margin: 1rem auto;
@@ -67,7 +67,7 @@
   margin: 1rem auto;
 }
 
-.video-element:hover > .video-title {
+.video-element:hover>.video-title {
   text-shadow: 1px 1px 8px rgb(255 255 255 / 60%);
 }
 
@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-.video-img > img {
+.video-img>img {
   width: 100%;
 }
 
@@ -107,19 +107,22 @@
   background-color: black;
   padding: 1rem;
   width: 60vw;
-  height: 40vh;
+  height: auto;
 }
+
 .modal-close {
   position: absolute;
   font-size: 2rem;
   top: -2rem;
   right: -1rem;
 }
+
 .modal-close:hover,
-.video-modal-overlay:hover ~ .video-modal > .modal-close {
+.video-modal-overlay:hover~.video-modal>.modal-close {
   cursor: pointer;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
+
 .video-modal-content {
   flex: 2;
   font-family: "Roboto Condensed";
@@ -129,11 +132,13 @@
   letter-spacing: -0.05em;
   text-align: justify;
 }
+
 .video-content-frame {
   width: 100%;
   height: calc(40vw / 1.7);
   max-height: 35vh;
 }
+
 .video-modal-description {
   flex: 1;
   font-family: "Roboto Condensed";
@@ -141,19 +146,51 @@
   letter-spacing: -0.05em;
   text-align: justify;
   line-height: 18px;
+  padding-bottom: 5rem;
 }
-.video-modal-description > .title {
+
+.video-modal-description>.title {
   font-weight: 700;
+  padding: 0.5rem 0;
 }
-.video-modal-description > .description {
+
+.video-modal-description>.description {
   font-weight: 300;
 }
+
 .modal-buttons {
   display: grid;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
 }
-.modal-buttons > .videos-btn {
+
+.modal-buttons>.videos-btn {
   position: relative;
+}
+
+.readmore-btn {
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  text-align: justify;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.readmore-btn:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 8px rgb(255 255 255 / 60%);
+}
+
+.readmore-content {
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  text-align: justify;
+
 }

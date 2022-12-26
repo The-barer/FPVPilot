@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="header-element">
-      <Link className={"nav-logo " + logostyle} to={"/"}>
+      <Link className={"nav-logo " + logostyle} to={"/"} onClick={activateLink}>
         <img className="drone-logo" src={logo} alt="drone logo" />
       </Link>
       <nav className="header-navbar">
